@@ -10,30 +10,30 @@
 	<nav class="h-nav__main">
 		<ul>
 			<li>
-				<a href="/">HOME</a>
+				<a href="<%- data['root'] %>">HOME</a>
 			</li>
 			<li>
-				<a href="/column.html">カラム</a>
+				<a href="<%- data['root'] %>column.html">カラム</a>
 			</li>
 			<li class="has-child">
-				<a href="/contents">コンテンツ</a>
+				<a href="<%- data['root'] %>contents">コンテンツ</a>
 				<ul>
-					<li><a href="/contents">サイドバーなし</a></li>
-					<li><a href="/contents/sidebar.html">サイドバーあり</a></li>
+					<li><a href="<%- data['root'] %>contents">サイドバーなし</a></li>
+					<li><a href="<%- data['root'] %>contents/sidebar.html">サイドバーあり</a></li>
 				</ul>
 			</li>
 			<li class="has-child">
-				<a href="/archive">一覧ページ</a>
+				<a href="<%- data['root'] %>archive">一覧ページ</a>
 				<ul>
-					<li><a href="/archive">一覧ページ - カード</a></li>
-					<li><a href="/archive/list.html">一覧ページ - リスト</a></li>
+					<li><a href="<%- data['root'] %>archive">一覧ページ - カード</a></li>
+					<li><a href="<%- data['root'] %>archive/list.html">一覧ページ - リスト</a></li>
 				</ul>
 			</li>
 			<li class="has-child">
-				<a href="/nav/">レスポンシブナビゲーション</a>
+				<a href="<%- data['root'] %>nav/">レスポンシブナビゲーション</a>
 				<ul>
-					<li><a href="/nav/center.html">中央寄せ</a></li>
-					<li><a href="/nav/center.html">最後のメニューで長文にするとどうなるの？</a></li>
+					<li><a href="<%- data['root'] %>nav/center.html">中央寄せ</a></li>
+					<li><a href="<%- data['root'] %>nav/center.html">最後のメニューで長文にするとどうなるの？</a></li>
 				</ul>
 			</li>
 		</ul>
