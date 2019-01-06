@@ -8,10 +8,10 @@
     "build:postcss": "postcss temp/css/*.css -u autoprefixer postcss-clean css-mqpacker -d docs/css --no-map",
     "build:cssrename": "rename -f './docs/css/!(*.min.css)' {{f}}.min.css",
     "build:css": "npm run build:sass && npm run build:postcss && npm run build:cssrename",
-    "build:ejs": "ejs-cli --base-dir docs/src/ejs/files '/**/*.ejs' --out ./docs/",
+    "build:ejs": "ejs-cli --base-dir src/ejs/files '/**/*.ejs' --out ./docs/",
     "build:files": "npm run build:ejs & npm run build:css",
     "watch:css": "watch 'npm run build:css' ./akatsuki-base/",
-    "watch:ejs": "watch 'npm run build:ejs' ./docs/src/ejs/",
+    "watch:ejs": "watch 'npm run build:ejs' ./src/ejs/",
     "watch:files": "npm run watch:css & npm run watch:ejs",
     "bs": "browser-sync start -s ./docs/ -f './docs/css/*.css, ./docs/js/*.min.js, ./docs/**/*.html' -w",
     "watch_s": "npm run watch:files & npm rum bs"
