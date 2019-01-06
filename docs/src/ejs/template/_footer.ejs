@@ -1,0 +1,26 @@
+<footer id="footer" class="site-footer">
+	<div class="container">
+		<div class="flex flex--row">
+			<div class="flex__col text--center">
+				<p><a href="/">&copy; 2018 akatsuki-base All Rights Reserved.</a></p>
+			</div>
+		</div>
+	</div>
+</footer>
+<%
+for (var i = 0; i < data['js'].length; i++) {
+if (data['js'][i].async === true) {
+%><script async defer src="<%= data['js'][i].src %>"></script><%
+} else {
+%><script src="<%= data['js'][i].src %>"></script><%
+}
+if (data['js'][i].code != '') { %>
+<script>
+	<%- data['js'][i].code %>
+</script>
+<%
+}
+}
+%>
+</body>
+</html>

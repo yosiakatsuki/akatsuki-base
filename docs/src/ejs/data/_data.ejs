@@ -1,0 +1,133 @@
+<%
+/**
+ * データ取得
+ */
+getData = (page) => {
+	let data = dataList()
+	return data[page]
+}
+dataList = () => {
+	return {
+		'index': {
+			'title': 'akatsuki-base',
+			'css': [
+				{
+				    src:'./css/akatsuki-base-all.min.css',
+					code:''
+				}
+
+			],
+			'js': [],
+			'nav': ''
+		},
+		'column': {
+			'title': 'column | akatsuki-base',
+			'css': [
+				{
+				    src: './css/akatsuki-base-all.min.css',
+					code:''
+				},
+				{
+				    src: 'https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.10.0/styles/default.min.css',
+					code:''
+				},
+				{
+				    src: 'https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.13.1/styles/github-gist.min.css',
+					code:'.hljs {margin:-.5rem;}'
+				}
+			],
+			'js': [
+				{
+					src: '//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.13.1/highlight.min.js',
+					async: false,
+					code: 'hljs.initHighlightingOnLoad();'
+				}
+			],
+			'nav': ''
+		},
+		'contents': {
+			'title': 'contents | akatsuki-base',
+			'css': [
+				{
+					src:'../css/akatsuki-base-all.min.css',
+					code:''
+				}
+
+			],
+			'js': [],
+			'nav': ''
+		},
+		'sidebar': {
+			'title': 'sidebar | akatsuki-base',
+			'css': [
+				{
+					src:'../css/akatsuki-base-all.min.css',
+					code:''
+				},
+				{
+					src:'../css/akatsuki-sidebar.min.css',
+					code:''
+				}
+			],
+			'js': [],
+			'nav': ''
+		},
+		'nav': {
+			'title': 'nav | akatsuki-base',
+			'css': [
+				{
+					src:'../css/akatsuki-base-all.min.css',
+					code:''
+				}
+			],
+			'js': [],
+			'nav': ' rwd'
+		},
+		'nav-center': {
+			'title': 'nav-center | akatsuki-base',
+			'css': [
+				{
+					src:'../css/akatsuki-base-all.min.css',
+					code:''
+				}
+			],
+			'js': [],
+			'nav': ' rwd -center'
+		},
+		'archive': {
+			'title': 'archive | akatsuki-base',
+			'css': [
+				{
+					src:'../css/akatsuki-base-all.min.css',
+					code:''
+				}
+			],
+			'js': [
+				{
+					src: 'https://use.fontawesome.com/releases/v5.6.3/js/all.js',
+					async: true,
+					code: ''
+				}
+			],
+			'nav': ''
+		},
+		'archive-list': {
+			'title': 'archive-list | akatsuki-base',
+			'css': [
+				{
+					src:'../css/akatsuki-base-all.min.css',
+					code:''
+				}
+			],
+			'js': [
+				{
+					src: 'https://use.fontawesome.com/releases/v5.6.3/js/all.js',
+					async: true,
+					code: ''
+				}
+			],
+			'nav': ''
+		}
+	}
+}
+%>

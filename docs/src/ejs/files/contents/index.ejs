@@ -1,0 +1,30 @@
+<%
+include('../../data/_data');
+let data = getData('contents');
+%> <%-
+include('../../template/_header',{data:data})
+%>
+
+<div class="site-content">
+	<div class="container">
+		<div class="flex flex--row">
+			<main class="flex__col content__main">
+				<article>
+					<header class="content__header">
+						<h1 class="content__title">メインコンテンツとサイドバー</h1>
+					</header>
+					<div class="entry-content">
+						<h2>1カラム表示サンプル</h2>
+						<p>これは1カラム表示でのサンプルです。</p>
+						<p>カラム幅は<code>880px</code>になります。</p>
+						<p>デフォルトは1カラム表示で、オプションとしてサイドバーありを選択できます。</p>
+						<p>サイドバーありのサンプルはこちら▼</p>
+						<p><a class="btn" href="/contents/sidebar.html">サイドバーあり</a></p>
+					</div>
+				</article>
+			</main>
+		</div>
+	</div>
+</div>
+
+<%- include('../../template/_footer',{data:data}) %>

@@ -1,0 +1,25 @@
+<%
+include('../../data/_data');
+let data = getData('nav');
+%> <%-
+include('../../template/_header',{data:data})
+%>
+
+<div class="container">
+	<div class="flex flex--row">
+		<main class="flex__col content__main">
+			<article>
+				<header class="content__header">
+					<h1 class="content__title">ナビゲーションサンプル</h1>
+				</header>
+				<div class="entry-content">
+					<h2>レスポンシブナビゲーションサンプル</h2>
+					<p>ナビゲーションに<code>rwd</code>クラスをつけると、デスクトップ表示でナビゲーションが展開される</p>
+					<p>グローバルナビゲーションは2階層目まで対応</p>
+				</div>
+			</article>
+		</main>
+	</div>
+</div>
+
+<%- include('../../template/_footer',{data:data}) %>

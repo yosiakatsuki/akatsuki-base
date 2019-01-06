@@ -1,0 +1,280 @@
+<%
+include('../data/_data');
+let data = getData('index');
+%> <%-
+include('../template/_header',{data:data})
+%>
+
+<main>
+	<div class="entry-content">
+		<section class="container">
+			<h1>HTMLタグ</h1>
+			<hr>
+			<section>
+				<h2>見出しのサンプル</h2>
+				<h1>H1タグ</h1>
+				<p>段落テキストテスト段落テキストテスト段落テキストテスト段落テキストテスト</p>
+				<h2>H2タグ</h2>
+				<p>段落テキストテスト段落テキストテスト段落テキストテスト段落テキストテスト</p>
+				<h3>H3タグ</h3>
+				<p>段落テキストテスト段落テキストテスト段落テキストテスト段落テキストテスト</p>
+				<h4>H4タグ</h4>
+				<p>段落テキストテスト段落テキストテスト段落テキストテスト段落テキストテスト</p>
+				<h5>H5タグ</h5>
+				<p>段落テキストテスト段落テキストテスト段落テキストテスト段落テキストテスト</p>
+				<h6>H6タグ</h6>
+				<p>段落テキストテスト段落テキストテスト段落テキストテスト段落テキストテスト</p>
+			</section>
+			<hr>
+			<section>
+				<h2>段落間の確認</h2>
+				<p>段落テキストテスト段落テキストテスト段落テキストテスト段落テキストテスト</p>
+				<p>
+					ながい段落テキストながい段落テキストながい段落テキストながい段落テキストながい段落テキストながい段落テキストながい段落テキストながい段落テキストながい段落テキストながい段落テキストながい段落テキストながい段落テキストながい段落テキストながい段落テキストながい段落テキストながい段落テキストながい段落テキストながい段落テキストながい段落テキストながい段落テキストながい段落テキストながい段落テキストながい段落テキストながい段落テキストながい段落テキストながい段落テキストながい段落テキスト</p>
+				<p>ちょっとしたテキスト</p>
+				<p>ちょっとしたテキスト</p>
+				<p>ちょっとしたテキスト</p>
+				<p>段落テキストテスト段落テキストテスト段落テキストテスト段落テキストテスト</p>
+			</section>
+			<hr>
+			<section>
+				<h2>リスト</h2>
+				<h3>番号なしリスト</h3>
+				<ul>
+					<li>リスト１</li>
+					<li>リスト１</li>
+					<li>リスト１
+						<ul>
+							<li>リスト２</li>
+							<li>リスト２</li>
+							<li>リスト２
+								<ul>
+									<li>リスト３</li>
+									<li>リスト３</li>
+									<li>リスト３</li>
+								</ul>
+							</li>
+						</ul>
+					</li>
+					<li>リスト１
+						<ol>
+							<li>リスト２</li>
+							<li>リスト２</li>
+							<li>リスト２
+								<ul>
+									<li>リスト３</li>
+									<li>リスト３</li>
+									<li>リスト３</li>
+								</ul>
+							</li>
+						</ol>
+					</li>
+					<li>リスト１</li>
+				</ul>
+				<h3>番号つきリスト</h3>
+				<ol>
+					<li>リスト１</li>
+					<li>リスト１</li>
+					<li>リスト１
+						<ul>
+							<li>リスト２</li>
+							<li>リスト２</li>
+							<li>リスト２
+								<ul>
+									<li>リスト３</li>
+									<li>リスト３</li>
+									<li>リスト３</li>
+								</ul>
+							</li>
+						</ul>
+					</li>
+					<li>リスト１
+						<ol>
+							<li>リスト２</li>
+							<li>リスト２</li>
+							<li>リスト２
+								<ul>
+									<li>リスト３</li>
+									<li>リスト３</li>
+									<li>リスト３</li>
+								</ul>
+							</li>
+						</ol>
+					</li>
+					<li>リスト１</li>
+				</ol>
+				<h3>dl,dt,dd</h3>
+				<dl>
+					<dt>リストタイトル</dt>
+					<dd>リスト説明リスト説明リスト説明リスト説明リスト説明</dd>
+					<dt>リストタイトル</dt>
+					<dd>リスト説明リスト説明リスト説明リスト説明</dd>
+					<dt>リストタイトル</dt>
+					<dd>リスト説明リスト説明リスト説明リスト説明</dd>
+					<dt>リストタイトル</dt>
+					<dd>リスト説明リスト説明リスト説明リスト説明</dd>
+					<dt>リストタイトル</dt>
+					<dd>リスト説明リスト説明リスト説明リスト説明</dd>
+				</dl>
+			</section>
+			<hr>
+			<section>
+				<h2>リンク</h2>
+				<ul>
+					<li>内部リンク:<a href="/">これはリンクです。</a></li>
+					<li>外部リンク:<a href="https://yosiakatsuki.net" rel="nofollow">外部リンク</a>だからといって特に変化はありません。</li>
+				</ul>
+			</section>
+			<hr>
+			<section>
+				<h2>引用 (blockquote) </h2>
+				<blockquote>
+					<p>一行の引用文</p>
+				</blockquote>
+				<blockquote>
+					<p>複数行の引用文。これは複数行の引用文。これは複数行の引用文。</p>
+					<p>
+						複数行の引用文。これは複数行の引用文。これは複数行の引用文。これは複数行の引用文。これは複数行の引用文。これは複数行の引用文。これは複数行の引用文。これは複数行の引用文。これは複数行の引用文。これは複数行の引用文。</p>
+					<p>複数行の引用文。これは複数行の引用文。これは複数行の引用文。</p>
+					<p><cite>cite参照も含まれる - <a href="#">参照リンク</a></cite></p>
+				</blockquote>
+			</section>
+			<hr>
+			<section>
+				<h2>テーブル</h2>
+				<h3>通常</h3>
+				<table>
+					<thead>
+					<tr>
+						<th>名前</th>
+						<th>性別</th>
+						<th>プロフィール</th>
+					</tr>
+					</thead>
+					<tbody>
+					<tr>
+						<th>山田太郎</th>
+						<td>男性</td>
+						<td>山好きの海育ち。アウトドア派。</td>
+					</tr>
+					<tr>
+						<th>田中花子</th>
+						<td>女性</td>
+						<td>ぬいぐるみ集めが趣味。</td>
+					</tr>
+					<tr>
+						<th>山本次郎</th>
+						<td>男性</td>
+						<td>テーブル内の文章がとてもとてもとてもとてもとてもとてもおおい、かつ、テーブル内で改行するサンプル<br>ここが2行目</td>
+					</tr>
+					<tr>
+						<th>中山愛子</th>
+						<td>女性</td>
+						<td>謎多き女性。</td>
+					</tr>
+					</tbody>
+				</table>
+				<h3>fixed</h3>
+				<table class="tbl-fixed">
+					<thead>
+					<tr>
+						<th>名前</th>
+						<th>性別</th>
+						<th>プロフィール</th>
+					</tr>
+					</thead>
+					<tbody>
+					<tr>
+						<th>山田太郎</th>
+						<td>男性</td>
+						<td>山好きの海育ち。アウトドア派。</td>
+					</tr>
+					<tr>
+						<th>田中花子</th>
+						<td>女性</td>
+						<td>ぬいぐるみ集めが趣味。</td>
+					</tr>
+					<tr>
+						<th>山本次郎</th>
+						<td>男性</td>
+						<td>テーブル内の文章がとてもとてもとてもとてもとてもとてもおおい、かつ、テーブル内で改行するサンプル<br>ここが2行目</td>
+					</tr>
+					<tr>
+						<th>中山愛子</th>
+						<td>女性</td>
+						<td>謎多き女性。</td>
+					</tr>
+					</tbody>
+				</table>
+				<h3>scroll</h3>
+				<table class="tbl-scroll">
+					<thead>
+					<tr>
+						<th>名前</th>
+						<th>性別</th>
+						<th>プロフィール</th>
+					</tr>
+					</thead>
+					<tbody>
+					<tr>
+						<th>山田太郎</th>
+						<td>男性</td>
+						<td>山好きの海育ち。アウトドア派。</td>
+					</tr>
+					<tr>
+						<th>田中花子</th>
+						<td>女性</td>
+						<td>ぬいぐるみ集めが趣味。</td>
+					</tr>
+					<tr>
+						<th>山本次郎</th>
+						<td>男性</td>
+						<td>テーブル内の文章がとてもとてもとてもとてもとてもとてもおおい、かつ、テーブル内で改行するサンプル<br>ここが2行目</td>
+					</tr>
+					<tr>
+						<th>中山愛子</th>
+						<td>女性</td>
+						<td>謎多き女性。</td>
+					</tr>
+					</tbody>
+				</table>
+			</section>
+			<hr>
+			<section>
+				<h2>コード・整形済みテキスト</h2>
+				<h3><code>code</code>タグを使ったコード表示</h3>
+				<p><code>style.css</code>などのファイル名、<code>color:red;</code>などのコード表示</p>
+				<h3><code>pre</code>タグを使った複数行表示</h3>
+				<pre><code>&lt;div class=&quot;h-nav&quot;&gt;
+    &lt;input id=&quot;h-nav__toggle&quot; type=&quot;checkbox&quot; name=&quot;h-nav__toggle&quot; hidden&gt;
+    &lt;label for=&quot;h-nav__toggle&quot; class=&quot;h-nav__btn&quot;&gt;
+        &lt;span class=&quot;hamburger&quot;&gt;
+            &lt;span class=&quot;top&quot;&gt;&lt;/span&gt;
+            &lt;span class=&quot;middle&quot;&gt;&lt;/span&gt;
+            &lt;span class=&quot;bottom&quot;&gt;&lt;/span&gt;
+        &lt;/span&gt;
+    &lt;/label&gt;
+    &lt;nav class=&quot;h-nav__main&quot;&gt;
+        &lt;ul&gt;
+            &lt;li&gt;
+                &lt;a href=&quot;#&quot;&gt;menu1&lt;/a&gt;
+            &lt;/li&gt;
+            &lt;li&gt;
+                &lt;a href=&quot;#&quot;&gt;menu2&lt;/a&gt;
+            &lt;/li&gt;
+            &lt;li&gt;
+                &lt;a href=&quot;#&quot;&gt;menu3&lt;/a&gt;
+                &lt;ul&gt;
+                    &lt;li&gt;&lt;a href=&quot;#&quot;&gt;submenu1&lt;/a&gt;&lt;/li&gt;
+                    &lt;li&gt;&lt;a href=&quot;#&quot;&gt;submenu2&lt;/a&gt;&lt;/li&gt;
+                &lt;/ul&gt;
+            &lt;/li&gt;
+        &lt;/ul&gt;
+    &lt;/nav&gt;
+&lt;/div&gt;</code></pre>
+			</section>
+		</section>
+	</div>
+</main>
+
+<%- include('../template/_footer',{data:data}) %>

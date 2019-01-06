@@ -1,0 +1,24 @@
+<%
+include('../../data/_data');
+let data = getData('nav-center');
+%> <%-
+include('../../template/_header-center',{data:data})
+%>
+
+<div class="container">
+	<div class="flex flex--row">
+		<main class="flex__col content__main">
+			<article>
+				<header class="content__header">
+					<h1 class="content__title">ナビゲーションサンプル</h1>
+				</header>
+				<div class="entry-content">
+					<h2>中央寄せナビゲーションサンプル</h2>
+					<p>ナビゲーションを中央寄せにしたサンプルです</p>
+				</div>
+			</article>
+		</main>
+	</div>
+</div>
+
+<%- include('../../template/_footer',{data:data}) %>

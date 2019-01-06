@@ -1,0 +1,33 @@
+<%
+include('../../data/_data');
+let data = getData('archive-list');
+%> <%-
+include('../../template/_header',{data:data})
+%>
+
+<div class="site-content">
+	<div class="container">
+		<div class="flex flex--row">
+			<main class="flex__col--1">
+				<header class="content__header">
+					<h1 class="content__title">一覧表示サンプル - リスト</h1>
+					<p class="content__dscr">アーカイブページの概要。カテゴリーやタグの説明など</p>
+				</header>
+				<div class="item-list">
+					<%- include('../../template/archive/_list',{data:data}) %>
+					<%- include('../../template/archive/_list',{data:data}) %>
+					<%- include('../../template/archive/_list',{data:data}) %>
+					<%- include('../../template/archive/_list',{data:data}) %>
+					<%- include('../../template/archive/_list',{data:data}) %>
+					<%- include('../../template/archive/_list-no-img',{data:data}) %>
+					<%- include('../../template/archive/_list-no-img',{data:data}) %>
+					<%- include('../../template/archive/_list-no-img',{data:data}) %>
+					<%- include('../../template/archive/_list-no-img',{data:data}) %>
+				</div>
+			</main>
+		</div>
+	</div>
+</div>
+
+
+<%- include('../../template/_footer',{data:data}) %>
