@@ -1,0 +1,46 @@
+{
+  "name": "akatsuki-base",
+  "version": "1.0.0",
+  "description": "yStandard用CSS基本部分",
+  "main": "index.js",
+  "scripts": {
+    "build:sass": "node-sass --importer node_modules/node-sass-package-importer/dist/cli.js ./akatsuki-base/ -o temp/css",
+    "build:postcss": "postcss temp/css/*.css -u autoprefixer postcss-clean css-mqpacker -d docs/css --no-map",
+    "build:cssrename": "rename -f './docs/css/!(*.min.css)' {{f}}.min.css",
+    "build:css": "npm run build:sass && npm run build:postcss && npm run build:cssrename",
+    "build:ejs": "ejs-cli --base-dir docs/src/ejs/files '/**/*.ejs' --out ./docs/",
+    "build:files": "npm run build:ejs & npm run build:css",
+    "watch:css": "watch 'npm run build:css' ./akatsuki-base/",
+    "watch:ejs": "watch 'npm run build:ejs' ./docs/src/ejs/",
+    "watch:files": "npm run watch:css & npm run watch:ejs",
+    "bs": "browser-sync start -s ./docs/ -f './docs/css/*.css, ./docs/js/*.min.js, ./docs/**/*.html' -w",
+    "watch_s": "npm run watch:files & npm rum bs"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yosiakatsuki/akatsuki-base.git"
+  },
+  "author": "yosiakatsuki",
+  "license": "ISC",
+  "devDependencies": {
+    "autoprefixer": "^9.4.2",
+    "browser-sync": "^2.26.3",
+    "css-mqpacker": "^7.0.0",
+    "ejs-cli": "^2.0.1",
+    "node-sass": "^4.11.0",
+    "node-sass-package-importer": "^5.2.0",
+    "normalize.css": "^8.0.1",
+    "postcss-clean": "^1.1.0",
+    "postcss-cli": "^6.0.1",
+    "rename-cli": "^5.1.2",
+    "watch": "^1.0.2"
+  },
+  "browserslist": [
+    "last 2 versions",
+    "not ie < 11"
+  ],
+  "bugs": {
+    "url": "https://github.com/yosiakatsuki/akatsuki-base/issues"
+  },
+  "homepage": "https://github.com/yosiakatsuki/akatsuki-base#readme"
+}

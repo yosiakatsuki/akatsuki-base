@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+	<meta charset="UTF-8">
+	<meta name="robots" content="noindex">
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<title>contents | akatsuki-base</title>
+	
+		<link rel="stylesheet" href="./css/akatsuki-base.min.css">
+	
+	
+</head>
+<body>
+
+<header id="header">
+	<div class="container">
+		<div class="flex flex--row flex--a-center flex--j-between">
+			<div class="flex__col">
+				<h1 class="header__title text--b"><a href="/">akatsuki-base</a></h1>
+			</div>
+			<div class="flex__col">
+				<div class="h-nav">
+	<input id="h-nav__toggle" type="checkbox" name="h-nav__toggle" hidden>
+	<label for="h-nav__toggle" class="h-nav__btn">
+		<span class="hamburger">
+			<span class="top"></span>
+			<span class="middle"></span>
+			<span class="bottom"></span>
+		</span>
+	</label>
+	<nav class="h-nav__main">
+		<ul>
+			<li>
+				<a href="/">HOME</a>
+			</li>
+			<li>
+				<a href="/column.html">カラム</a>
+			</li>
+			<li>
+				<a href="/contents">コンテンツ</a>
+				<ul>
+					<li><a href="/contents">サイドバーなし</a></li>
+					<li><a href="#">サイドバーあり</a></li>
+				</ul>
+			</li>
+		</ul>
+	</nav>
+</div>
+			</div>
+		</div>
+	</div>
+</header>
+<main>
+    <div class="container has-sidebar">
+        <div class="flex flex--row">
+            <div class="flex__col content-main">
+                <div class="entry-content">
+                    <section>
+                        <h1>メインコンテンツとサイドバー</h1>
+                    </section>
+                </div>
+            </div>
+            <div class="flex__col sidebar">
+                <h2>ここはサイドバー</h2>
+            </div>
+        </div>
+    </div>
+</main>
+
+<footer id="footer">
+	<div class="container">
+		<div class="flex flex--row">
+			<div class="flex__col text--center">
+				<p><a href="/">&copy; 2018 akatsuki-base All Rights Reserved.</a></p>
+			</div>
+		</div>
+	</div>
+</footer>
+
+</body>
+</html>

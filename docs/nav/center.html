@@ -1,0 +1,97 @@
+ <!DOCTYPE html>
+<html lang="ja">
+<head>
+	<meta charset="UTF-8">
+	<meta name="robots" content="noindex">
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<title>nav-center | akatsuki-base</title>
+	
+	<link rel="stylesheet" href="../css/akatsuki-base-all.min.css">
+	
+	
+</head>
+<body>
+
+<header id="header" class="site-header">
+	<div class="container">
+		<div class="flex flex--row flex--j-center">
+			<div class="flex__col">
+				<div class="text--center">
+					<h1 class="header__title text--b"><a href="/">akatsuki-base</a></h1>
+				</div>
+				<div class="nav--center">
+					<div class="h-nav rwd -center">
+	<input id="h-nav__toggle" type="checkbox" name="h-nav__toggle" hidden>
+	<label for="h-nav__toggle" class="h-nav__btn">
+		<span class="hamburger">
+			<span class="top"></span>
+			<span class="middle"></span>
+			<span class="bottom"></span>
+		</span>
+	</label>
+	<nav class="h-nav__main">
+		<ul>
+			<li>
+				<a href="/">HOME</a>
+			</li>
+			<li>
+				<a href="/column.html">カラム</a>
+			</li>
+			<li class="has-child">
+				<a href="/contents">コンテンツ</a>
+				<ul>
+					<li><a href="/contents">サイドバーなし</a></li>
+					<li><a href="/contents/sidebar.html">サイドバーあり</a></li>
+				</ul>
+			</li>
+			<li class="has-child">
+				<a href="/archive">一覧ページ</a>
+				<ul>
+					<li><a href="/archive">一覧ページ - カード</a></li>
+					<li><a href="/archive/list.html">一覧ページ - リスト</a></li>
+				</ul>
+			</li>
+			<li class="has-child">
+				<a href="/nav/">レスポンシブナビゲーション</a>
+				<ul>
+					<li><a href="/nav/center.html">中央寄せ</a></li>
+					<li><a href="/nav/center.html">最後のメニューで長文にするとどうなるの？</a></li>
+				</ul>
+			</li>
+		</ul>
+	</nav>
+</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</header>
+
+<div class="container">
+	<div class="flex flex--row">
+		<main class="flex__col content__main">
+			<article>
+				<header class="content__header">
+					<h1 class="content__title">ナビゲーションサンプル</h1>
+				</header>
+				<div class="entry-content">
+					<h2>中央寄せナビゲーションサンプル</h2>
+					<p>ナビゲーションを中央寄せにしたサンプルです</p>
+				</div>
+			</article>
+		</main>
+	</div>
+</div>
+
+<footer id="footer" class="site-footer">
+	<div class="container">
+		<div class="flex flex--row">
+			<div class="flex__col text--center">
+				<p><a href="/">&copy; 2018 akatsuki-base All Rights Reserved.</a></p>
+			</div>
+		</div>
+	</div>
+</footer>
+
+</body>
+</html>

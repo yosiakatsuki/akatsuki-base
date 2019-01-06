@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+	<meta charset="UTF-8">
+	<meta name="robots" content="noindex">
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<title>column | akatsuki-base</title>
+	
+	<link rel="stylesheet" href="./css/akatsuki-base-all.min.css">
+	
+	
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.10.0/styles/default.min.css">
+	
+	
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.13.1/styles/github-gist.min.css">
+	
+	<style>.hljs {margin:-.5rem;}</style>
+	
+	
+</head>
+<body>
+
+<header id="header" class="site-header">
+	<div class="container">
+		<div class="flex flex--row flex--a-center flex--j-between">
+			<div class="flex__col">
+				<h1 class="header__title text--b"><a href="/">akatsuki-base</a></h1>
+			</div>
+			<div class="flex__col">
+				<div class="h-nav">
+	<input id="h-nav__toggle" type="checkbox" name="h-nav__toggle" hidden>
+	<label for="h-nav__toggle" class="h-nav__btn">
+		<span class="hamburger">
+			<span class="top"></span>
+			<span class="middle"></span>
+			<span class="bottom"></span>
+		</span>
+	</label>
+	<nav class="h-nav__main">
+		<ul>
+			<li>
+				<a href="/">HOME</a>
+			</li>
+			<li>
+				<a href="/column.html">カラム</a>
+			</li>
+			<li class="has-child">
+				<a href="/contents">コンテンツ</a>
+				<ul>
+					<li><a href="/contents">サイドバーなし</a></li>
+					<li><a href="/contents/sidebar.html">サイドバーあり</a></li>
+				</ul>
+			</li>
+			<li class="has-child">
+				<a href="/archive">一覧ページ</a>
+				<ul>
+					<li><a href="/archive">一覧ページ - カード</a></li>
+					<li><a href="/archive/list.html">一覧ページ - リスト</a></li>
+				</ul>
+			</li>
+			<li class="has-child">
+				<a href="/nav/">レスポンシブナビゲーション</a>
+				<ul>
+					<li><a href="/nav/center.html">中央寄せ</a></li>
+					<li><a href="/nav/center.html">最後のメニューで長文にするとどうなるの？</a></li>
+				</ul>
+			</li>
+		</ul>
+	</nav>
+</div>
+			</div>
+		</div>
+	</div>
+</header>
+<main>
+    <div class="entry-content">
+        <section class="container">
+            <h1>カラム分け</h1>
+            <section>
+                <h2>コードサンプル</h2>
+                <pre><code>&lt;div class=&quot;flex flex--row&quot;&gt;
+  &lt;div class=&quot;flex__col--4 flex__col-md--4&quot;&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+            </section>
+            <hr>
+            <section>
+                <h2>スマホ:4 タブレット:4 PC:4</h2>
+                <div class="flex flex--row">
+                    <div class="flex__col--4 flex__col--md-4 flex__col--lg-4">
+                        <div style="border: 1px solid #222;padding: 1rem;">カラム1</div>
+                    </div>
+                    <div class="flex__col--4 flex__col--md-4 flex__col--lg-4">
+                        <div style="border: 1px solid #222;padding: 1rem;">カラム2</div>
+                    </div>
+                    <div class="flex__col--4 flex__col--md-4 flex__col--lg-4">
+                        <div style="border: 1px solid #222;padding: 1rem;">カラム3</div>
+                    </div>
+                    <div class="flex__col--4 flex__col--md-4 flex__col--lg-4">
+                        <div style="border: 1px solid #222;padding: 1rem;">カラム4</div>
+                    </div>
+                </div>
+                <h2>スマホ:2 タブレット:3 PC:4</h2>
+                <div class="flex flex--row">
+                    <div class="flex__col--2 flex__col--md-3 flex__col--lg-4">
+                        <div style="border: 1px solid #222;padding: 1rem;">カラム1</div>
+                    </div>
+                    <div class="flex__col--2 flex__col--md-3 flex__col--lg-4">
+                        <div style="border: 1px solid #222;padding: 1rem;">カラム2</div>
+                    </div>
+                    <div class="flex__col--2 flex__col--md-3 flex__col--lg-4">
+                        <div style="border: 1px solid #222;padding: 1rem;">カラム3</div>
+                    </div>
+                    <div class="flex__col--2 flex__col--md-3 flex__col--lg-4">
+                        <div style="border: 1px solid #222;padding: 1rem;">カラム4</div>
+                    </div>
+                </div>
+                <h2>スマホ:1 タブレット:3 PC:3</h2>
+                <div class="flex flex--row">
+                    <div class="flex__col--1 flex__col--md-3 flex__col--lg-3">
+                        <div style="border: 1px solid #222;padding: 1rem;">カラム1</div>
+                    </div>
+                    <div class="flex__col--1 flex__col--md-3 flex__col--lg-3">
+                        <div style="border: 1px solid #222;padding: 1rem;">カラム2</div>
+                    </div>
+                    <div class="flex__col--1 flex__col--md-3 flex__col--lg-3">
+                        <div style="border: 1px solid #222;padding: 1rem;">カラム3</div>
+                    </div>
+                </div>
+            </section>
+            <hr>
+            <section>
+                <h2>隙間なし</h2>
+                <p><code>flex--row</code>と一緒に<code>-no-gutter</code>をつける</p>
+                <div class="flex flex--row -no-gutter">
+                    <div class="flex__col--1 flex__col--md-3 flex__col--lg-3">
+                        <div style="border: 1px solid #222;padding: 1rem;">カラム1</div>
+                    </div>
+                    <div class="flex__col--1 flex__col--md-3 flex__col--lg-3">
+                        <div style="border: 1px solid #222;padding: 1rem;">カラム2</div>
+                    </div>
+                    <div class="flex__col--1 flex__col--md-3 flex__col--lg-3">
+                        <div style="border: 1px solid #222;padding: 1rem;">カラム3</div>
+                    </div>
+                </div>
+            </section>
+            <hr>
+            <section>
+                <h2>スライド</h2>
+                <pre><code>&lt;div class=&quot;flex flex--row -slide&quot;&gt;
+  &lt;div class=&quot;flex__col&quot;&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;flex__col&quot;&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+                <div class="flex flex--row -slide">
+                    <div class="flex__col">
+                        <div style="border: 1px solid #222;padding: 1rem;">カラム1</div>
+                    </div>
+                    <div class="flex__col">
+                        <div style="border: 1px solid #222;padding: 1rem;">カラム2</div>
+                    </div>
+                    <div class="flex__col">
+                        <div style="border: 1px solid #222;padding: 1rem;">カラム3</div>
+                    </div>
+                    <div class="flex__col">
+                        <div style="border: 1px solid #222;padding: 1rem;">カラム3</div>
+                    </div>
+                    <div class="flex__col">
+                        <div style="border: 1px solid #222;padding: 1rem;">カラム3</div>
+                    </div>
+                    <div class="flex__col">
+                        <div style="border: 1px solid #222;padding: 1rem;">カラム3</div>
+                    </div>
+                    <div class="flex__col">
+                        <div style="border: 1px solid #222;padding: 1rem;">カラム3</div>
+                    </div>
+                </div>
+            </section>
+        </section>
+    </div>
+</main>
+<footer id="footer" class="site-footer">
+	<div class="container">
+		<div class="flex flex--row">
+			<div class="flex__col text--center">
+				<p><a href="/">&copy; 2018 akatsuki-base All Rights Reserved.</a></p>
+			</div>
+		</div>
+	</div>
+</footer>
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.13.1/highlight.min.js"></script>
+<script>
+	hljs.initHighlightingOnLoad();
+</script>
+
+</body>
+</html>
