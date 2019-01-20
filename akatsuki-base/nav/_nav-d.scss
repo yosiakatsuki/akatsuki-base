@@ -90,6 +90,24 @@
         }
       }
     }
+    &.-row2 {
+      @include media-breakpoint(lg) {
+        a {
+          padding: 1rem 0;
+        }
+        li {
+          margin-right: 1.5rem;
+          ul {
+            a {
+              padding: 1rem 0;
+            }
+            li {
+              margin-right: 0;
+            }
+          }
+        }
+      }
+    }
   }
   //@root
 }
