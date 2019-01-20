@@ -4,6 +4,7 @@
     @include make-section();
     
     .section--full,
+    .section--bg-full,
     .section--screen {
       margin-left: calc(50% - 50vw);
       margin-right: calc(50% - 50vw);
@@ -11,6 +12,10 @@
     .section--screen {
       min-height: 640px;
       height: 100vh;
+    }
+    .section--bg-full {
+      padding-right: calc(50vw - 50%);
+      padding-left: calc(50vw - 50%);
     }
     .section--gray {
       background-color: $color__bg-gray-light;
